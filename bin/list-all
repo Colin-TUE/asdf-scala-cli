@@ -12,4 +12,4 @@ fi
 accept="-H 'Accept: application/vnd.github.v3+json'"
 
 eval "curl -s $auth $accept $releases?per_page=$limit" \
-  | grep '"tag_name"' | sed -E 's/.+v([^"]+).+/\1/' | tac | tr '\n' ' '
+  | grep '"name"' | sed -E 's/.+v([^"]+).+/\1/' | tac | tr '\n' ' '
