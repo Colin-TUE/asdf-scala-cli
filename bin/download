@@ -13,4 +13,3 @@ url="https://raw.githubusercontent.com/VirtusLab/scala-cli/v$ASDF_INSTALL_VERSIO
 dl="$ASDF_DOWNLOAD_PATH/$filename"
 
 curl "$url" -Lo "$dl"
-chmod +x $dl
