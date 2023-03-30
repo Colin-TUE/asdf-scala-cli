@@ -8,8 +8,8 @@ if [[ $ASDF_INSTALL_TYPE != 'version' ]]; then
   exit 1
 fi
 
-filename="v$ASDF_INSTALL_VERSION/scala-cli.sh"
-url="https://github.com/VirtusLab/scala-cli/blob/$filename"
+filename="scala-cli.sh"
+url="https://github.com/VirtusLab/scala-cli/blob/v$ASDF_INSTALL_VERSION/$filename"
 dl="$ASDF_DOWNLOAD_PATH/$filename"
 
 curl "$url" -Lo "$dl"
