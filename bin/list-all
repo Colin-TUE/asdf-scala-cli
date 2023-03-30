@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+releases=https://api.github.com/repos/VirtusLab/scala-cli/tags
+limit=100
+
+if [[ -n $GITHUB_API_TOKEN ]]; then
+  auth="-H 'Authorization: token $GITHUB_API_TOKEN'"
+fi
+
+accept="-H 'Accept: application/vnd.github.v3+json'"
+
+eval "curl -s $auth $accept $releases?per_page=$limit" \
+  | grep '"tag_name"' | sed -E 's/.+v([^"]+).+/\1/' | tac | tr '\n' ' '
