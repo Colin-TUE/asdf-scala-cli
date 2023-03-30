@@ -2,9 +2,9 @@
 
 set -eo pipefail
 
-filename="scala-cli.sh"
+filename="scala-cli"
 
 mkdir -p "$ASDF_INSTALL_PATH/bin"
-mv "$ASDF_DOWNLOAD_PATH/$filename" "$ASDF_INSTALL_PATH/bin/$filename"
+mv "$ASDF_DOWNLOAD_PATH/$filename.sh" "$ASDF_INSTALL_PATH/bin/$filename"
 
 chmod +x "$ASDF_INSTALL_PATH/bin/$filename"
