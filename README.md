@@ -41,5 +41,5 @@ asdf install
 Now install the `skopeo` tool provided by the plugin:
 
 ```shell
-asdf install skopeo latest
+asdf install scala-cli latest
 ```
