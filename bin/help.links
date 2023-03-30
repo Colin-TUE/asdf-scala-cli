@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cat <<-EOM
+	Scala CLI: https://github.com/VirtusLab/scala-cli/
+EOM

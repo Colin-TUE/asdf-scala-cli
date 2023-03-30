@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cat <<-EOM
+	Plugin to manage Scala CLI, a a command-line tool to
+	interact with the Scala language. It lets you compile,
+	run, test, and package your Scala code (and more!)
+EOM
