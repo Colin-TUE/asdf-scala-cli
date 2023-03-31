@@ -2,8 +2,6 @@
 
 Plugin to manage [Scala CLI](https://github.com/VirtusLab/scala-cli), a command-line tool to interact with the Scala language. It lets you compile, run, test, and package your Scala code (and more!)
 
-:rotating_light: **NOTE:** Commits to this repository are [automatically mirrored](https://docs.gitlab.com/ee/user/project/repository/mirror/) to a **PUBLIC** repository. This is to allow `asdf` to access and add the plugin. :rotating_light:
-
 For details on `asdf` plugin development, see the `asdf` documentation on how to [create a plugin](https://asdf-vm.com/plugins/create.html).
 
 ## How to install
@@ -14,7 +12,7 @@ To download and build `scala-cli`, the plugin only depends on `curl`. The depend
 
 ### Adding the plugin
 
-To make the plugin available for `asdf`, it is published through a [public mirror repository](https://github.com/Colin-TUE/asdf-scala-cli). Add `asdf-scala-cli` by pointing to the mirror:
+Add the plugin by providing this repository when adding it to ASDF:
 
 ```shell
 asdf plugin add scala-cli https://github.com/Colin-TUE/asdf-scala-cli
